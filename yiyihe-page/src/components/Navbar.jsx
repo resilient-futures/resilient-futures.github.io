@@ -188,7 +188,7 @@ const Navbar = () => {
 			<Toolbar>
 				<Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
 					<Link to="/" style={{ color: 'inherit', textDecoration: 'none' }}>
-						Professor's Name
+						Yiyi He
 					</Link>
 				</Typography>
 				<Button color="inherit" component={Link} to="/">

@@ -8,9 +8,9 @@ const Contact = () => {
 				Contact
 			</Typography>
 			<Typography variant="body1">
-				Email: <Link href="mailto:john.doe@university.edu">john.doe@university.edu</Link>
+				Email: <Link href="mailto:yiyi.he@design.gatech.edu">yiyi.he@design.gatech.edu</Link>
 			</Typography>
-			<Typography variant="body1">Office: Room 123, Computer Science Building</Typography>
+			<Typography variant="body1">Office: [to add]</Typography>
 		</Container>
 	);
 };

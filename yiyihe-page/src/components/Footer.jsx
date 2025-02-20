@@ -18,7 +18,7 @@ const Footer = () => {
 	return (
 		<Box sx={{ bgcolor: 'primary.main', color: 'white', p: 2, textAlign: 'center' }}>
 			<Typography variant="body1">
-				&copy; {new Date().getFullYear()} Professor's Name. All rights reserved.
+				&copy; {new Date().getFullYear()} Yiyi He. All rights reserved.
 			</Typography>
 		</Box>
 	);

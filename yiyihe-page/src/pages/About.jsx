@@ -5,7 +5,7 @@ const About = () => {
 	return (
 		<Container sx={{ py: 8 }}>
 			<Typography variant="h4" gutterBottom>
-				About Me
+				About Us
 			</Typography>
 			<Typography variant="body1">
 				Our group tackles fundamental questions in fluid mechanics, climate science, and geophysics by integrating mathematical and machine-learned models with observed data. We use our findings to address challenges facing the world, such as advancing our scientific knowledge of the climate system.
