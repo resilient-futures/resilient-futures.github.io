@@ -29,7 +29,10 @@ const Home = () => {
 				}}
 			>
 				<Container>
-					<Typography variant="h1" sx={{ position: 'relative', zIndex: 1, fontWeight: 'bold' }}>
+					<Typography
+						className='hero-text'
+						variant="h1"
+						sx={{ position: 'relative', zIndex: 1, fontWeight: 'bold' }}>
 						Welcome to our group!
 					</Typography>
 				</Container>

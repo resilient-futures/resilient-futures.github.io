@@ -76,7 +76,8 @@
 /* ===== Global Styles ===== */
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  /* font-family: Arial, sans-serif; */
+  font-family: var(--body-font-font-family);
 }
 
 /* ===== App Layout ===== */
@@ -92,14 +93,35 @@ body {
 }
 
 /* ===== Navbar Styles ===== */
-.navbar {
-  display: flex;
-  justify-content: space-between;
+.navbar-container {
+  display: flex !important;
+  transition: padding 140ms ease-in-out !important;
+  justify-content: space-between !important;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: #333;
-  color: #fff;
+  background-color: hsla(var(--darkAccent-hsl), 0.6) !important;
+  /* color: var(--white-hsl); */
+  font-family: var(--heading-font-font-family) !important;
+  /* no  shadow */
+  box-shadow: none !important;
+
 }
+
+.navbar-container.hidden {
+  top: -100px;
+}
+
+.navbar-container-wrapper {
+  transition: padding 140ms ease-in-out !important;
+}
+
+/* 
+element {
+  --solidHeaderBackgroundColor: hsla(var(--white-hsl), 1);
+  --solidHeaderNavigationColor: hsla(var(--black-hsl), 1);
+  --gradientHeaderBackgroundColor: hsla(var(--darkAccent-hsl), 1);
+  --gradientHeaderNavigationColor: hsla(var(--white-hsl), 1);
+} */
 
 /* ===== Footer Styles ===== */
 .footer {
@@ -119,4 +141,33 @@ body {
   opacity: 0;
   transform: translate(0%, 30%);
   transition-property: transform, opacity;
+}
+
+.hero-text {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  font-family: var(--heading-font-font-family) !important;
+  z-index: 999;
+}
+
+.tweak-fixed-header {
+  transition: padding 140ms ease-in-out;
+}
+
+.button {
+  /* background-color: hsla(var(--darkAccent-hsl), 1); */
+  color: --white-hsl;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-family: var(--heading-font-font-family) !important;
+}
+
+.main-page-link {
+  text-decoration: none;
+  color: var(--white-hsl);
+  text-align: left;
 }
