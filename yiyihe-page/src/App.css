@@ -52,6 +52,7 @@
   --accent-hsl: 42.86, 3.87%, 64.51%;
   --lightAccent-hsl: 210, 3.23%, 87.84%;
   --darkAccent-hsl: 240, 2.61%, 22.55%;
+  --white-hex: #ffffff;
 }
 
 
@@ -170,4 +171,80 @@ element {
   text-decoration: none;
   color: var(--white-hsl);
   text-align: left;
+}
+
+.section-background {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.section-background img {
+  width: 100%;
+  height: auto;
+}
+
+.section-background-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.section-title {
+  position: absolute;
+  top: 66%;
+  left: 33%;
+  transform: translate(-50%, -50%);
+  color: var(--white-hex);
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: var(--heading-font-font-family) !important;
+}
+
+.section-background {
+  position: relative;
+  width: 100%;
+  margin-bottom: 2rem;
+  /* Add some space below the section */
+}
+
+.section-background img {
+  width: 100%;
+  height: auto;
+}
+
+
+.content-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  font-family: var(--body-font-font-family) !important;
+  margin-bottom: 2rem;
+}
+
+
+.content-image {
+  flex: 1;
+}
+
+.content-text {
+  flex: 2;
+  font-family: var(--body-font-font-family) !important;
+}
+
+/* .content-wrapper.inversed {
+  flex-direction: row-reverse;
+} */
+
+.use-body-font {
+  font-family: var(--body-font-font-family) !important;
+}
+
+.research-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  font-family: var(--body-font-font-family) !important;
 }

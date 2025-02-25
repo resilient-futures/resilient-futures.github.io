@@ -66,6 +66,13 @@ const Navbar = () => {
 
 					<Button
 						className='button'
+						color="inherit"
+						component={Link} to="/research">
+						Research
+					</Button>
+
+					<Button
+						className='button'
 
 						color="inherit"
 						component={Link} to="/publications">

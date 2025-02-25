@@ -137,6 +137,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Publications from './pages/Publications';
 import Contact from './pages/Contact';
+import Research from './pages/Research';
 import './App.css';
 import Introduction from './pages/Introduction';
 import PhotoGallery from './pages/PhotoGallery';
@@ -152,6 +153,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
+          <Route path="/research" element={<Research />} />
           <Route path="/publications" element={<Publications />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/introduction" element={<Introduction />} />
