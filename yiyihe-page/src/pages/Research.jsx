@@ -8,7 +8,7 @@ const Research = () => {
 			<div className="section-background">
 				<img
 					alt=""
-					src="https://images.squarespace-cdn.com/content/v1/5f502852f36d51610004c15d/74eeebcc-ce77-4e22-888e-52071c8ba242/IMG_5874.JPG"
+					src="https://images.squarespace-cdn.com/content/v1/5f502852f36d51610004c15d/9f7ed2a8-432d-414a-a7a8-189c977f690f/20230605_094649.jpg"
 					style={{ display: 'block', width: '100%', height: 'auto', objectPosition: '49.7907949790795% 30.68429463896557%' }}
 				/>
 				<div className="section-background-overlay" style={{ opacity: 0 }}></div>
@@ -16,11 +16,6 @@ const Research = () => {
 					Research
 				</Typography>
 			</div>
-			{/* <div className="content-text">
-				<Typography variant="body1">
-					This is the research description text. It will be displayed on the right side of the image.
-				</Typography>
-			</div> */}
 
 			<Container sx={{ py: 8 }}>
 				<div className="research-buttons">
