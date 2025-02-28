@@ -128,8 +128,8 @@ element {
 .footer {
   text-align: center;
   padding: 1rem;
-  background-color: #333;
-  color: #fff;
+  background-color: hsla(var(--darkAccent-hsl), 0.6) !important;
+  /* color: #fff; */
   margin-top: auto;
 }
 
@@ -232,10 +232,6 @@ element {
   flex: 2;
   font-family: var(--body-font-font-family) !important;
 }
-
-/* .content-wrapper.inversed {
-  flex-direction: row-reverse;
-} */
 
 .use-body-font {
   font-family: var(--body-font-font-family) !important;
