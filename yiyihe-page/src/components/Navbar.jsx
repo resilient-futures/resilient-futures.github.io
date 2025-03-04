@@ -60,8 +60,8 @@ const Navbar = () => {
 					<Button
 						className='button'
 						color="inherit"
-						component={Link} to="/about">
-						About
+						component={Link} to="/team">
+						Team
 					</Button>
 
 					<Button

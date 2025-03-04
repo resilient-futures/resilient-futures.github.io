@@ -40,7 +40,7 @@ const Home = () => {
 
 
 			{/* Bio Section */}
-			<Container sx={{ py: 8 }}>
+			{/* <Container sx={{ py: 8 }}>
 				<Typography className='use-body-font' variant="h4" gutterBottom>
 					Assistant Professor
 
@@ -55,7 +55,29 @@ const Home = () => {
 					<br />
 					Her previous work involves using 3D hydrodynamic flood models to simulate flooding under different climate change scenarios and analyze the impact of both coastal and inland flooding on critical infrastructure networks. She received her bachelor’s degree from Nanjing University and her master’s and Ph.D. degree from UC Berkeley.
 				</Typography>
-			</Container>
+			</Container> */}
+
+			{/* News Section */}
+
+			<Box>
+				<Container sx={{ py: 8 }}>
+					<Typography className='use-body-font' variant="h4" gutterBottom>
+						News
+					</Typography>
+					<Typography variant="body1">
+
+						2024/12/11:
+						Our Paper "Assessing health care access during flooding in sub-saharan Africa" has been accepted to the AGU24 Meeting.
+						<br />
+						2024/08/01:
+						Our Paper "Beyond carbon: Unveiling vulnerabilities of the transportation fuel system for climate resilience" has been accepted to Energy Research & Social Science.
+
+
+					</Typography>
+				</Container>
+
+
+			</Box>
 		</Box>
 	);
 };
