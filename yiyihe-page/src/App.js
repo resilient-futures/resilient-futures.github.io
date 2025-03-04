@@ -12,6 +12,7 @@ import Research from './pages/Research';
 import './App.css';
 import Introduction from './pages/Introduction';
 import PhotoGallery from './pages/PhotoGallery';
+import Teaching from './pages/Teaching';
 
 const App = () => {
   return (
@@ -25,6 +26,7 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/team" element={<Team />} />
           <Route path="/research" element={<Research />} />
+          <Route path="/teaching" element={<Teaching />} />
           <Route path="/publications" element={<Publications />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/introduction" element={<Introduction />} />

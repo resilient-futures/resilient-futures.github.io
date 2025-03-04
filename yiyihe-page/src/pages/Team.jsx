@@ -8,7 +8,7 @@ const teamData = {
 		{
 			name: 'Yiyi He',
 			bio: 'Yiyi He is an assistant professor in the School of City and Regional Planning (SCaRP) at the College of Design at Georgia Tech. Her research centers on the interdisciplinary fields of urban planning, GIScience, climate science, and artificial intelligence. She is interested in building a better understanding of the uncertainty and asymmetric impacts of climate-change-induced extreme weather events (e.g., flooding, wildfires, extreme heat) on critical components of the built environment (e.g., lifeline infrastructure networks, vulnerable neighborhoods). She leverages data-driven approaches, such as GIS, network science, hyperspectral remote sensing, machine learning, and spatial statistics to tackle complex challenges in climate change and resilience research and to inform more intelligent planning and policy directives.',
-			image: '/team-member/yiyihe.png', // the public/images/ folder public/team-member/taraliu.jpg
+			image: '/team-member/yiyihe.png',
 			link: 'https://www.linkedin.com/in/yiyihe'
 		}
 	],

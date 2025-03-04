@@ -88,6 +88,15 @@ const Navbar = () => {
 						Contact
 					</Button>
 
+					<Button
+						className='button'
+
+						color="inherit"
+						component={Link}
+						to="/teaching">
+						Teaching
+					</Button>
+
 				</Toolbar>
 			</AppBar>
 		</Container>
