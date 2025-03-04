@@ -12,6 +12,14 @@
   --lightAccent-hsl: 210, 3.23%, 87.84%;
   --darkAccent-hsl: 240, 2.61%, 22.55%;
   --white-hex: #ffffff;
+  /* primary color: navy blue */
+  --navy-blue: #000080;
+  --secondary-color: #4747D4;
+  --tertiary-color: #8080FF;
+  --quaternary-color: #0E0E55;
+  /* highlight color */
+  --coral: #FF7F50;
+  --cool-grey: #CBCBCB;
 }
 
 
@@ -60,9 +68,7 @@ body {
   align-items: center;
   padding: 1rem 2rem;
   background-color: hsla(var(--darkAccent-hsl), 0.6) !important;
-  /* color: var(--white-hsl); */
   font-family: var(--heading-font-font-family) !important;
-  /* no  shadow */
   box-shadow: none !important;
 
 }
@@ -75,21 +81,35 @@ body {
   transition: padding 140ms ease-in-out !important;
 }
 
-/* 
-element {
-  --solidHeaderBackgroundColor: hsla(var(--white-hsl), 1);
-  --solidHeaderNavigationColor: hsla(var(--black-hsl), 1);
-  --gradientHeaderBackgroundColor: hsla(var(--darkAccent-hsl), 1);
-  --gradientHeaderNavigationColor: hsla(var(--white-hsl), 1);
-} */
-
 /* ===== Footer Styles ===== */
 .footer {
+  width: 100%;
   text-align: center;
-  padding: 1rem;
+  /* padding: 1rem 0; */
   background-color: hsla(var(--darkAccent-hsl), 0.6) !important;
-  /* color: #fff; */
   margin-top: auto;
+  bottom: 0;
+  position: relative;
+  color: var(--white-hex);
+}
+
+.footer-content {
+  width: 80%;
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+
+/* Mobile-friendly */
+@media (max-width: 768px) {
+  .footer {
+    font-size: 0.875rem;
+    padding: 0.75rem 0;
+  }
 }
 
 /* ===== Animation ===== */
@@ -116,7 +136,6 @@ element {
 }
 
 .button {
-  /* background-color: hsla(var(--darkAccent-hsl), 1); */
   color: --white-hsl;
   padding: 0.5rem 1rem;
   border: none;
@@ -250,7 +269,7 @@ element {
 }
 
 .team-member__info a {
-  color: #007bff;
+  color: var(--navy-blue);
   text-decoration: none;
   font-size: 1rem;
 }
@@ -344,7 +363,7 @@ element {
 }
 
 .course__links a {
-  color: #007bff;
+  color: var(--navy-blue);
   text-decoration: underline;
   font-size: 1rem;
   margin-right: 1rem;

@@ -8,7 +8,8 @@ const Research = () => {
 			<div className="section-background">
 				<img
 					alt=""
-					src="https://images.squarespace-cdn.com/content/v1/5f502852f36d51610004c15d/9f7ed2a8-432d-414a-a7a8-189c977f690f/20230605_094649.jpg"
+					// src="https://images.squarespace-cdn.com/content/v1/5f502852f36d51610004c15d/9f7ed2a8-432d-414a-a7a8-189c977f690f/20230605_094649.jpg"
+					src="/research/Profile-Pic-Research.jpg"
 					style={{ display: 'block', width: '100%', height: 'auto', objectPosition: '49.7907949790795% 30.68429463896557%' }}
 				/>
 				<div className="section-background-overlay" style={{ opacity: 0 }}></div>

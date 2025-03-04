@@ -33,8 +33,6 @@ const Navbar = () => {
 
 		<Container
 			className='navbar-container-wrapper tweak-fixed-header'
-
-
 		>
 			<AppBar
 				className='navbar-container'>
@@ -67,6 +65,14 @@ const Navbar = () => {
 					<Button
 						className='button'
 						color="inherit"
+						component={Link}
+						to="/teaching">
+						Teaching
+					</Button>
+
+					<Button
+						className='button'
+						color="inherit"
 						component={Link} to="/research">
 						Research
 					</Button>
@@ -88,14 +94,7 @@ const Navbar = () => {
 						Contact
 					</Button>
 
-					<Button
-						className='button'
 
-						color="inherit"
-						component={Link}
-						to="/teaching">
-						Teaching
-					</Button>
 
 				</Toolbar>
 			</AppBar>

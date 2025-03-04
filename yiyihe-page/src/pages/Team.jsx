@@ -1,6 +1,5 @@
 
 import React from 'react'
-// import { TeamMember, TeamSection } from '../components/TeamMember'
 import { Typography } from '@mui/material';
 
 const teamData = {
@@ -15,9 +14,9 @@ const teamData = {
 	currentMembers: [
 		{
 			name: 'Tara Liu',
-			bio: 'Tara likes cats.',
+			bio: 'Tara is a master student in CSE(Computational Science & Engineering) and an aspiring data scientist. They are interested in the intersection of computer and marginalized communities. In their free time, Tara enjoys nature and metal music.',
 			image: '/team-member/taraliu.jpg',
-			link: 'https://example.com'
+			link: 'https://taraliu.netlify.app/'
 		},
 		{
 			name: 'Yuehan Zhang',
@@ -65,46 +64,33 @@ const TeamSection = ({ title, members }) => {
 }
 
 
-
-// const Team = () => {
-// 	return (<>
-// 		<div className="section-background">
-// 			<img
-// 				alt=""
-// 				src="https://images.squarespace-cdn.com/content/v1/5f502852f36d51610004c15d/9f7ed2a8-432d-414a-a7a8-189c977f690f/20230605_094649.jpg"
-// 				style={{ display: 'block', width: '100%', height: 'auto', objectPosition: '49.7907949790795% 30.68429463896557%' }}
-// 			/>
-// 			<div className="section-background-overlay" style={{ opacity: 0 }}>
-
-// 			</div>
-
-// 			<Typography variant="h2" className="section-title">
-// 				About Us
-// 			</Typography>
-
-// 			<div className="team">
-// 				< h1 > Meet Our Team</h1>
-// 				<div className="team-wrapper">
-// 					<TeamSection title="Principal Investigator" members={teamData.principalInvestigator} />
-// 					<TeamSection title="Current Members" members={teamData.currentMembers} />
-// 					<TeamSection title="Past Members" members={teamData.pastMembers} />
-// 				</div>
-// 			</div>
-// 		</>
-// 		)
-// }
-
-
 const Team = () => {
 	return (
 
+		<div className="team-members">
+			{/* Profile Picture Section */}
+			<div className="section-background">
+				<img
+					alt=""
+					// src="https://images.squarespace-cdn.com/content/v1/5f502852f36d51610004c15d/9f7ed2a8-432d-414a-a7a8-189c977f690f/20230605_094649.jpg"
+					src="/team-member/Profile-Pic-Team.jpg"
+					className="section-image"
+				/>
+				<div className="section-background-overlay"></div>
+				<Typography variant="h2" className="section-title">
+					Team
+				</Typography>
+			</div>
 
-		<div className="team">
-			<h1>Meet Our Team</h1>
-			<div className="team-wrapper">
-				<TeamSection title="Principal Investigator" members={teamData.principalInvestigator} />
-				<TeamSection title="Current Members" members={teamData.currentMembers} />
-				<TeamSection title="Alumni" members={teamData.pastMembers} />
+
+
+			<div className="team">
+				{/* <h1>Meet Our Team</h1> */}
+				<div className="team-wrapper">
+					<TeamSection title="Principal Investigator" members={teamData.principalInvestigator} />
+					<TeamSection title="Current Members" members={teamData.currentMembers} />
+					<TeamSection title="Alumni" members={teamData.pastMembers} />
+				</div>
 			</div>
 		</div>
 

@@ -1,15 +1,14 @@
 
-import React from 'react';
-import { Box, Typography } from '@mui/material';
+import React from 'react'
 
 const Footer = () => {
 	return (
-		<Box sx={{ bgcolor: 'primary.main', color: 'white', p: 2, textAlign: 'center' }}>
-			<Typography variant="body1">
-				&copy; {new Date().getFullYear()} Yiyi He. All rights reserved.
-			</Typography>
-		</Box>
-	);
-};
+		<footer className="footer">
+			<div className="footer-content">
+				<p>© {new Date().getFullYear()} Yiyi He. All Rights Reserved.</p>
+			</div>
+		</footer>
+	)
+}
 
-export default Footer;
+export default Footer
