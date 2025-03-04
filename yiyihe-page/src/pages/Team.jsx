@@ -41,7 +41,7 @@ const TeamMember = ({ name, bio, image, link }) => {
 		<div className="team-member">
 			<img src={image} alt={name} className="team-member__image" />
 			<div className="team-member__info">
-				<h3>{name}</h3>``
+				<h3>{name}</h3>
 				<p>{bio}</p>
 				{link && <a href={link} target="_blank" rel="noopener noreferrer">[Website]</a>}
 			</div>
