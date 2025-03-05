@@ -14,15 +14,15 @@ const teamData = {
 	currentMembers: [
 		{
 			name: 'Tara Liu',
-			bio: 'Tara is a master student in CSE(Computational Science & Engineering) and an aspiring data scientist. They are interested in the intersection of computer and marginalized communities. In their free time, Tara enjoys nature and metal music.',
+			bio: 'Tara(they/their) is a master student in CSE and an aspiring data scientist. They are interested in empowering the marginalized communities with technology and have 10+ industry experience. They enjoy nature and metal music in free time. Fun fact: Taco cat spelled backward is taco cat.',
 			image: '/team-member/taraliu.jpg',
 			link: 'https://taraliu.netlify.app/'
 		},
 		{
 			name: 'Yuehan Zhang',
-			bio: 'Yuehan is a CSE student.',
-			image: '/team-member/yuehanzhang.jpg',
-			link: ''
+			bio: 'Yuehan Zhang is a Master student in Computational Science & Engineering at Georgia Institute of Technology, with a bachelor degree in Theoretical and Applied Mechanics from Fudan University. She has worked on projects involving transportation analytics and fine-tuning large language models. With experience in model optimization and hardware-software co-design, she is passionate about leveraging data-driven methods to solve complex, real-world problems.',
+			image: '/team-member/yuehan.jpg',
+			link: 'http://linkedin.com/in/yuehan-zhang-9676bb189'
 		}
 	],
 	pastMembers: [
