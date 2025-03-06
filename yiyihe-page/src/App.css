@@ -1,3 +1,18 @@
+/* Load Avenir Font */
+@font-face {
+  font-family: 'Avenir';
+  src: url('./assets/fonts/Avenir-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avenir';
+  src: url('./assets/fonts/Avenir-Bold.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+}
+
 /* ===== Color Variables ===== */
 
 :root {
@@ -27,25 +42,63 @@
 
 :root {
   --base-font-size: 16px;
-  --heading-font-font-family: Cormorant Garamond;
+  /* --heading-font-font-family: Cormorant Garamond;
   --heading-font-font-style: normal;
   --heading-font-font-weight: 500;
   --heading-font-text-transform: none;
   --heading-font-letter-spacing: 0em;
-  --heading-font-line-height: 1.4em;
-  --body-font-font-family: adobe-garamond-pro;
-  --body-font-font-style: normal;
+  --heading-font-line-height: 1.4em; */
+  /* --body-font-font-family: adobe-garamond-pro;
+   */
+  --body-font: 'Avenir';
+  /* --body-font-font-style: normal;
   --body-font-font-weight: 400;
   --body-font-text-transform: none;
   --body-font-letter-spacing: 0em;
-  --body-font-line-height: 1.8em;
+  --body-font-line-height: 1.8em; */
 }
 
 /* ===== Global Styles ===== */
 body {
   margin: 0;
-  /* font-family: Arial, sans-serif; */
-  font-family: var(--body-font-font-family);
+  font-family: var(--body-font) !important;
+  line-height: 1.5;
+}
+
+/* Title Styling */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Avenir';
+  font-weight: bold;
+  /* margin-bottom: 1rem; */
+}
+
+/* Paragraph Styling */
+p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+/* Links */
+a {
+  font-weight: 500;
+  text-decoration: none;
+  color: var(--navy-blue);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+button {
+  font-family: 'Avenir', sans-serif;
+  font-weight: bold;
+  background-color: var(--navy-blue) !important;
 }
 
 /* ===== App Layout ===== */
@@ -70,7 +123,6 @@ body {
   background-color: hsla(var(--darkAccent-hsl), 0.6) !important;
   font-family: var(--heading-font-font-family) !important;
   box-shadow: none !important;
-
 }
 
 .navbar-container.hidden {
@@ -91,6 +143,7 @@ body {
   bottom: 0;
   position: relative;
   color: var(--white-hex);
+  line-height: 0%;
 }
 
 .footer-content {
@@ -112,6 +165,44 @@ body {
   }
 }
 
+/* Hero Section */
+.hero {
+  height: 80vh;
+  background-image: url('../public/home/home.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* color: white; */
+  text-align: center;
+  position: relative;
+  color: var(--white-hex) !important;
+}
+
+/* Semi-transparent dark overlay */
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Title Styling */
+.hero-title {
+  position: relative;
+  /* Ensures it stays above the overlay */
+  font-size: 3rem;
+  font-weight: bold;
+  z-index: 1;
+}
+
+
+
+
 /* ===== Animation ===== */
 .slideIn {
   transform: translate(0, 0) !important;
@@ -123,6 +214,26 @@ body {
   transition-property: transform, opacity;
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0.2;
+    transform: translateY(5rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+h1,
+h2 {
+  animation: fadeIn 1s ease-in-out;
+  animation-delay: 0.2s;
+  animation-fill-mode: both;
+}
+
+/* ===== Hero Section ===== */
 .hero-text {
   font-size: 2rem;
   font-weight: 700;
@@ -150,48 +261,6 @@ body {
   color: var(--white-hsl);
   text-align: left;
 }
-
-.section-background {
-  position: relative;
-  margin-bottom: 2rem;
-}
-
-.section-background img {
-  width: 100%;
-  height: auto;
-}
-
-.section-background-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.section-title {
-  position: absolute;
-  top: 66%;
-  left: 33%;
-  transform: translate(-50%, -50%);
-  color: var(--white-hex);
-  font-size: 2rem;
-  font-weight: 700;
-  font-family: var(--heading-font-font-family) !important;
-}
-
-.section-background {
-  position: relative;
-  width: 100%;
-  margin-bottom: 2rem;
-  /* Add some space below the section */
-}
-
-.section-background img {
-  width: 100%;
-  height: auto;
-}
-
 
 .content-wrapper {
   display: flex;
@@ -268,11 +337,11 @@ body {
   font-size: 1rem;
 }
 
-.team-member__info a {
+/* .team-member__info a {
   color: var(--navy-blue);
   text-decoration: none;
   font-size: 1rem;
-}
+} */
 
 .team-member__info a:hover {
   text-decoration: underline;
@@ -281,19 +350,42 @@ body {
 /* ===== Section Background ===== */
 
 /* Profile Image Section */
+
+
+.section-title {
+  position: absolute;
+  /* top: 66%;
+  left: 33%; */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--white-hex);
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: var(--heading-font-font-family) !important;
+}
+
+
 .section-background {
   position: relative;
   width: 100%;
   overflow: hidden;
+  margin-bottom: 2rem;
 }
 
+/* 
+.section-background img {
+  width: 100%;
+  height: auto;
+} */
 
 .section-image {
   display: block;
   width: 100%;
   height: auto;
   /*  define max height for 70% view hight */
-  max-height: 90vh;
+  /* max-height: 90vh; */
+  max-height: 60vh;
   object-fit: cover;
   /* object-position: 50% 30%;? */
 }
@@ -305,7 +397,7 @@ body {
   width: 100%;
   height: 100%;
   /* Optional: Dark overlay */
-  /* background: rgba(0, 0, 0, 0.3); */
+  background: rgba(0, 0, 0, 0.3);
 }
 
 
@@ -341,8 +433,8 @@ body {
 }
 
 .course__image {
-  width: 12rem;
-  height: 12rem;
+  width: 15rem;
+  height: 15rem;
   object-fit: cover;
   border-radius: 0.5rem;
   margin-right: 1rem;

@@ -38,7 +38,7 @@ const Navbar = () => {
 				className='navbar-container'>
 
 				<Toolbar>
-					<Typography className='button main-page-link'
+					{/* <Typography className='button main-page-link'
 						variant="h6"
 						component="div"
 						sx={{ flexGrow: 1 }}>
@@ -46,7 +46,7 @@ const Navbar = () => {
 							style={{ color: 'inherit', textDecoration: 'none', alignSelf: 'left' }}>
 							Yiyi He
 						</Link>
-					</Typography>
+					</Typography> */}
 
 					<Button
 						className='button'
