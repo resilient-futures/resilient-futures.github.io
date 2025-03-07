@@ -26,12 +26,12 @@ const teamData = {
 		}
 	],
 	pastMembers: [
-		{
-			name: '',
-			bio: '',
-			image: '',
-			link: ''
-		}
+		// {
+		// 	name: '',
+		// 	bio: '',
+		// 	image: '',
+		// 	link: ''
+		// }
 	]
 }
 

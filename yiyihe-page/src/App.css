@@ -62,7 +62,8 @@
 body {
   margin: 0;
   font-family: var(--body-font) !important;
-  line-height: 1.5;
+  /* line-height: 1.5; */
+  line-height: 2;
 }
 
 /* Title Styling */
@@ -80,7 +81,7 @@ h6 {
 /* Paragraph Styling */
 p {
   font-size: 1rem;
-  line-height: 1.5;
+  line-height: 2;
   margin-bottom: 1rem;
 }
 
@@ -89,6 +90,7 @@ a {
   font-weight: 500;
   text-decoration: none;
   color: var(--navy-blue);
+  text-decoration: underline;
 }
 
 a:hover {
@@ -263,11 +265,14 @@ h2 {
 }
 
 .content-wrapper {
-  display: flex;
-  align-items: center;
   gap: 2rem;
-  font-family: var(--body-font-font-family) !important;
   margin-bottom: 2rem;
+  padding: 1rem;
+  align-items: center;
+  width: 62vw;
+  display: flex;
+  position: relative;
+  left: 19vw;
 }
 
 
@@ -302,7 +307,8 @@ h2 {
 
 .team-wrapper {
   width: 62%;
-  max-width: 800px;
+  /* max-width: 800px; */
+  max-width: 60rem;
   /* Prevent it from getting too wide on large screens */
 }
 
@@ -337,15 +343,6 @@ h2 {
   font-size: 1rem;
 }
 
-/* .team-member__info a {
-  color: var(--navy-blue);
-  text-decoration: none;
-  font-size: 1rem;
-} */
-
-.team-member__info a:hover {
-  text-decoration: underline;
-}
 
 /* ===== Section Background ===== */
 
@@ -450,17 +447,52 @@ h2 {
   font-size: 1rem;
 }
 
-.course__links {
-  margin-top: 0.5rem;
+
+/* =====Publications ===== */
+/* Publications Section */
+.publications {
+  width: 62%;
+  max-width: 800px;
+  margin: 2rem auto;
 }
 
-.course__links a {
-  color: var(--navy-blue);
-  text-decoration: underline;
-  font-size: 1rem;
-  margin-right: 1rem;
+.publications h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
 }
 
-.course__links a:hover {
-  text-decoration: underline;
+/* List of publications */
+
+.publications-wrapper {
+  padding: 1rem;
+  /* border-radius: 0.5rem; */
+  align-items: center;
+  width: 62vw;
+  /* max-width: 800px; */
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  left: 19vw;
+
+}
+
+/* ===== Research ===== */
+
+.research-button-wrapper {
+  display: flex;
+  /* justify-content: center; */
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-direction: row;
+}
+
+.research-wrapper {
+  gap: 2rem;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  align-items: center;
+  width: 62vw;
+  /* display: flex; */
+  position: relative;
+  left: 19vw;
 }
