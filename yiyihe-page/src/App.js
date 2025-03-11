@@ -18,7 +18,7 @@ const App = () => {
   return (
     <Router>
       <Box>
-        {/* Navbar */}
+        {/* Navigation bar */}
         <Navbar />
 
         {/* Main Content */}

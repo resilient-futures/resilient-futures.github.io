@@ -10,7 +10,7 @@ const teamData = {
 			image: '/team-member/yiyihe.png',
 			linkedin: 'https://www.linkedin.com/in/yiyihe',
 			github: 'https://github.com/jesuslovesyiyi',
-			website: ''
+			website: 'https://planning.gatech.edu/people/yiyi-he'
 		}
 	],
 	currentMembers: [
