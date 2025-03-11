@@ -8,8 +8,11 @@ const Hero = () => {
 				Welcome to Our Group
 			</Typography> */}
 			<h2 className='hero-title'>
-				Welcome to Our Group!
+				Welcome to Resilient Futures Lab
 			</h2>
+
+
+
 		</Box>
 	)
 }

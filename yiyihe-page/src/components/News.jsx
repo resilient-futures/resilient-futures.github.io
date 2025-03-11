@@ -18,6 +18,19 @@ const newsData = [
 const News = () => {
 	return (
 		<div className="news">
+			<h3> Vision Statement</h3>
+
+			<div className="news-list">
+				<p>
+					The future demands cities that do more than survive—they must adapt, innovate, and lead. At the Resilient Futures Lab, we push the boundaries of research, technology, and policy to create urban systems that can withstand disruption and emerge stronger.
+
+					We bring together thinkers and doers—scientists, policymakers, planners, and communities—to design solutions that harness AI, data, and cutting-edge strategies for resilience. Our work is not just about preparing for the next crisis but reimagining the built environment for a dynamic, equitable, and sustainable future.
+				</p>
+
+			</div>
+
+
+
 			<h3> News</h3>
 			<div className="news-list">
 				{newsData.map((news, index) => (
