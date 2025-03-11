@@ -18,7 +18,7 @@ const Research = () => {
 					Research
 				</Typography>
 			</div>
-			{/* </div> */}
+
 
 			{/* <div className='content-wrapper'> */}
 			<div className='research-wrapper'>

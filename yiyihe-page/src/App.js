@@ -29,8 +29,6 @@ const App = () => {
           <Route path="/teaching" element={<Teaching />} />
           <Route path="/publications" element={<Publications />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/introduction" element={<Introduction />} />
-          <Route path="/gallery" element={<PhotoGallery />} />
         </Routes>
 
         {/* Footer */}

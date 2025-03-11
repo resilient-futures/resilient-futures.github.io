@@ -496,3 +496,16 @@ h2 {
   position: relative;
   left: 19vw;
 }
+
+/* ===== Research ===== */
+.contact-wrapper {
+  gap: 2rem;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  align-items: center;
+  width: 62vw;
+  /* display: flex; */
+  position: relative;
+  left: 19vw;
+
+}
