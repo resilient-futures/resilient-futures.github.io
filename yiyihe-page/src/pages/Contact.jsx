@@ -18,6 +18,7 @@ const Contact = () => {
 
 
 			<div className='contact-wrapper'>
+
 				<p>Email: yiyi.he@design.gatech.edu</p>
 				<p>Office: 245 Fourth St NW, Suite 204E, Atlanta, GA 30332-0155</p>
 				<br />
@@ -25,10 +26,16 @@ const Contact = () => {
 				<br />
 				<br />
 				<br />
-
-
-
-
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
 
 
 

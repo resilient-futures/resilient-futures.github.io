@@ -38,6 +38,48 @@
   --cool-grey: #CBCBCB;
 }
 
+/* Ensure the entire app takes up full height */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Main App Container */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  /* Ensures full viewport height */
+}
+
+/* Main Content should expand */
+.main-content {
+  flex: 1;
+  /* Pushes the footer to the bottom */
+}
+
+/* Footer Styling */
+.footer {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  /* Semi-transparent black */
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 1rem;
+  position: relative;
+  bottom: 0;
+}
+
+/* Mobile-friendly */
+@media (max-width: 768px) {
+  .footer {
+    font-size: 0.875rem;
+    padding: 0.75rem 0;
+  }
+}
 
 /* ===== Font Variables ===== */
 
@@ -135,6 +177,7 @@ a:hover {
   position: relative;
   color: var(--white-hex);
   line-height: 0%;
+  text-align: center;
 }
 
 .footer-content {
@@ -198,7 +241,7 @@ a:hover {
 @keyframes fadeIn {
   from {
     opacity: 0.2;
-    transform: translateY(1rem);
+    transform: translateY(0.2rem);
   }
 
   to {
@@ -321,15 +364,14 @@ h2 {
 
 
 .section-title {
-  /* position: absolute; */
-  /* top: 66%;
-  left: 33%; */
+  width: max-content;
+  white-space: nowrap;
   top: 50%;
-  left: 50%;
+  left: 48%;
   position: absolute;
-  transform: translate(-25%, -25%);
+  transform: translate(-50%, -50%);
   color: var(--white-hex);
-  font-size: 2rem;
+  font-size: 2rem !important;
   font-weight: 700;
   font-family: var(--body-font) !important;
 }
@@ -619,4 +661,32 @@ h2 {
   background: var(--white-hex);
   color: var(--secondary-color);
   border-color: var(--secondary-color);
+}
+
+/* Default Research View */
+.research-default {
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.2rem;
+}
+
+.default-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.default-text {
+  font-size: 1rem;
+}
+
+
+/* ===== Contact ===== */
+.contact-wrapper {
+  gap: 2rem;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  align-items: center;
+  width: 62vw;
+  position: relative;
+  left: 19vw;
 }

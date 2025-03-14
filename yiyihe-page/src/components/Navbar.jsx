@@ -65,16 +65,16 @@ const Navbar = () => {
 					<Button
 						className='button'
 						color="inherit"
-						component={Link}
-						to="/teaching">
-						Teaching
+						component={Link} to="/research">
+						Research
 					</Button>
 
 					<Button
 						className='button'
 						color="inherit"
-						component={Link} to="/research">
-						Research
+						component={Link}
+						to="/teaching">
+						Teaching
 					</Button>
 
 					<Button

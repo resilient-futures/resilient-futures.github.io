@@ -32,8 +32,8 @@ const App = () => {
         </Routes>
 
         {/* Footer */}
-        <Footer />
       </Box>
+      <Footer />
     </Router>
   );
 };
