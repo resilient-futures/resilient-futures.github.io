@@ -34,7 +34,9 @@ const News = () => {
 			<h3> News</h3>
 			<div className="news-list">
 				{newsData.map((news, index) => (
-					<div key={index} className="news-item">
+					<div key={index}
+						className="news-item"
+					>
 						<span className="news-date">{news.date}&nbsp;</span>
 						<span className="news-title">{news.description}&nbsp; </span>
 						<a href={news.link} target="_blank" rel="noopener noreferrer">Read More</a>

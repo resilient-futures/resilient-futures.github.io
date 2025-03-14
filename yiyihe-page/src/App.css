@@ -91,6 +91,7 @@ h4,
 h5,
 h6 {
   font-family: 'Avenir-Light';
+  margin-bottom: 0rem;
 }
 
 .h3 {
@@ -284,6 +285,7 @@ h2 {
   display: flex;
   position: relative;
   left: 19vw;
+  font-family: var(--body-font);
 }
 
 
@@ -309,7 +311,6 @@ h2 {
 
 .team-wrapper {
   width: 62%;
-  /* max-width: 800px; */
   max-width: 60rem;
   /* Prevent it from getting too wide on large screens */
 }
@@ -444,33 +445,6 @@ h2 {
 }
 
 
-/* =====Publications ===== */
-/* Publications Section */
-.publications {
-  width: 62%;
-  max-width: 800px;
-  margin: 2rem auto;
-}
-
-.publications h2 {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-}
-
-/* List of publications */
-
-.publications-wrapper {
-  padding: 1rem;
-  /* border-radius: 0.5rem; */
-  align-items: center;
-  width: 62vw;
-  /* max-width: 800px; */
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  left: 19vw;
-
-}
 
 /* ===== Research ===== */
 
@@ -558,8 +532,6 @@ h2 {
 /* ===== Research Section ===== */
 
 
-
-/* Research Section */
 
 .research-wrapper {
   width: 62%;
@@ -688,4 +660,13 @@ h2 {
   width: 62vw;
   position: relative;
   left: 19vw;
+}
+
+/* ===== News ===== */
+.news-item {
+  align-items: flex-start;
+  /* padding: 1rem 0;
+   */
+  margin-top: 1rem;
+  font-size: 1rem;
 }
