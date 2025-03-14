@@ -188,32 +188,6 @@ a:hover {
   }
 }
 
-/* Hero Section */
-.hero {
-  height: 80vh;
-  background-image: url('../public/home/home.jpg');
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  position: relative;
-  color: var(--white-hex) !important;
-}
-
-/* Semi-transparent dark overlay */
-.hero::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-
 
 
 /* ===== Animation ===== */
@@ -247,14 +221,67 @@ h2 {
 }
 
 /* ===== Hero Section ===== */
-.hero-text {
-  /* font-size: 2rem; */
-  font-size: xx-large;
-  /* font-weight: 700; */
-  /* margin-bottom: 1rem; */
-  font-family: var(--body-font);
-  z-index: 999;
+/* Hero Section */
+.hero {
+  height: 80vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  color: var(--white-hex) !important;
+  /* transition: background-image 1s ease-in-out; */
+  transition: background-image 2s ease-in;
 }
+
+/* Semi-transparent dark overlay */
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Title Styling */
+.hero-title {
+  position: absolute;
+  font-size: 2rem;
+  text-align: center;
+}
+
+
+/* Dots Navigation */
+.hero-dots {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 0.4rem;
+}
+
+/* Individual Dot */
+.dot {
+  width: 0.4rem;
+  height: 0.4rem;
+  border-radius: 50%;
+  background-color: var(--cool-grey);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Active Dot */
+.dot.active {
+  background-color: white;
+  width: 0.5rem;
+  height: 0.5rem;
+}
+
+
 
 .tweak-fixed-header {
   transition: padding 140ms ease-in-out;
