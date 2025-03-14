@@ -10,8 +10,6 @@ import Publications from './pages/Publications';
 import Contact from './pages/Contact';
 import Research from './pages/Research';
 import './App.css';
-import Introduction from './pages/Introduction';
-import PhotoGallery from './pages/PhotoGallery';
 import Teaching from './pages/Teaching';
 
 const App = () => {
