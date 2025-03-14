@@ -665,9 +665,13 @@ h2 {
 
 /* Default Research View */
 .research-default {
-  text-align: center;
-  padding: 2rem;
-  font-size: 1.2rem;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  align-items: center;
+  width: 62vw;
+  position: relative;
+  left: 19vw;
 }
 
 .default-title {
