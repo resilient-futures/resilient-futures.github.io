@@ -38,6 +38,14 @@ const teamData = {
 			github: 'https://github.com/Gabriel-Appiah',
 			website: ''
 		},
+		{
+			name: 'Tiger Peng',
+			bio: 'Tiger is pursuing a master’s degree in computer science at Georgia Tech with a concentration in machine learning. He will graduate in May 2026. His interests lie at the intersection of computing, data, and sustainability. He has pursued this passion through an internship at the solar company Silicon Ranch Corporation, where he performed data analysis and predictive modeling, and a research assistantship with the Georgia Tech School of City and Regional Planning, where he studied the relationship between weather and power grid stability in India.',
+			image: '/team-member/tigerpeng.jpg',
+			linkedin: ' https://www.linkedin.com/in/pengtiger/',
+			github: 'https://github.com/TigerPeng2',
+			website: 'https://www.tigerypeng.com/'
+		},
 
 	],
 	pastMembers: [
@@ -49,14 +57,7 @@ const teamData = {
 			github: 'https://github.com/changmin-seok',
 			website: ''
 		},
-		{
-			name: 'Tiger Peng',
-			bio: 'Tiger is pursuing a master’s degree in computer science at Georgia Tech with a concentration in machine learning. He will graduate in May 2026. His interests lie at the intersection of computing, data, and sustainability. He has pursued this passion through an internship at the solar company Silicon Ranch Corporation, where he performed data analysis and predictive modeling, and a research assistantship with the Georgia Tech School of City and Regional Planning, where he studied the relationship between weather and power grid stability in India.',
-			image: '/team-member/tigerpeng.jpg',
-			linkedin: ' https://www.linkedin.com/in/pengtiger/',
-			github: 'https://github.com/TigerPeng2',
-			website: 'https://www.tigerypeng.com/'
-		},
+
 
 	]
 }
