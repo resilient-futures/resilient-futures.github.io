@@ -36,7 +36,7 @@ const Publications = () => {
 
 			{/* Reversed Ordered List */}
 			<div
-				className="publications-wrapper">
+				className="content-wrapper">
 
 
 				<ol className="publications-list" reversed>
