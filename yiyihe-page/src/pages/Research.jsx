@@ -108,7 +108,10 @@ const Research = () => {
 		<div className="team-members">
 			{/* Profile Picture Section */}
 			<div className="section-background">
-				<img alt="" src="/research/Profile-Pic-Research.jpg" className="section-image" />
+				<img alt=""
+					src="/research/Profile-Pic-Research.jpg"
+					className="section-image" />
+
 				<div className="section-background-overlay"></div>
 				<Typography variant="h2" className="section-title">Research</Typography>
 			</div>
