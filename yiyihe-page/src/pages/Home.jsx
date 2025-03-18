@@ -6,17 +6,14 @@ import News from '../components/News'
 const Home = () => {
 	return (
 		<div className="home">
-			<Hero /> {/* Hero section at the top */}
-			{/* <div className="home-content">
-				<h2>About Our Research</h2>
-				<p>
-				</p>
-			</div> */}
+
+			<Hero />
+
 			<Container>
 				<News />
 			</Container>
-		</div>
 
+		</div>
 	);
 };
 

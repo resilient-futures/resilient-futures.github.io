@@ -1,15 +1,69 @@
-// import React from 'react'
+
+// import React, { useState, useEffect } from 'react'
 // import { Box } from '@mui/material'
 
+// const images = [
+// 	'/home/image0.jpg',
+// 	'/home/image1.jpg',
+// 	'/home/image2.jpg',
+// 	'/home/image3.jpg',
+// 	'/home/image4.jpg',
+// 	'/home/image5.jpg',
+// 	'/home/image6.jpg'
+// ]
+
 // const Hero = () => {
+// 	const [currentIndex, setCurrentIndex] = useState(0)
+
+// 	// Auto-switch images every 3 seconds
+// 	useEffect(() => {
+// 		const interval = setInterval(() => {
+// 			setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length)
+// 		}, 3000)
+
+// 		return () => clearInterval(interval) // Cleanup on unmount
+// 	}, [])
+
+// 	// Change image on scroll
+// 	const handleScroll = (event) => {
+// 		if (event.deltaY > 0) {
+// 			setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length)
+// 		} else {
+// 			setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length)
+// 		}
+// 	}
+
 // 	return (
-// 		<Box className="hero">
+// 		<Box className="hero" onWheel={handleScroll} style={{ backgroundImage: `url(${images[currentIndex]})` }}>
 
-// 			<h2 className='hero-title'>
-// 				Welcome to Resilient Futures Lab
-// 			</h2>
+// 			{/* <div className="hero-overlay">
 
+// 			</div> */}
 
+// 			{/* Image Wrapper */}
+// 			<div className="hero-image-container">
+// 				{images.map((src, index) => (
+// 					<img
+// 						key={index}
+// 						src={src}
+// 						alt={`Hero ${index + 1}`}
+// 						className={`hero-image ${index === currentIndex ? 'active' : ''}`}
+// 					/>
+// 				))}
+// 			</div>
+
+// 			<h2 className="hero-title">Welcome to Resilient Futures Lab</h2>
+
+// 			{/* Dots Navigation */}
+// 			<div className="hero-dots">
+// 				{images.map((_, index) => (
+// 					<span
+// 						key={index}
+// 						className={`dot ${currentIndex === index ? 'active' : ''}`}
+// 						onClick={() => setCurrentIndex(index)}
+// 					></span>
+// 				))}
+// 			</div>
 
 // 		</Box>
 // 	)
@@ -33,11 +87,11 @@ const images = [
 const Hero = () => {
 	const [currentIndex, setCurrentIndex] = useState(0)
 
-	// Auto-switch images every 3 seconds
+	// Auto-switch images every 5 seconds
 	useEffect(() => {
 		const interval = setInterval(() => {
 			setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length)
-		}, 3000)
+		}, 9000)
 
 		return () => clearInterval(interval) // Cleanup on unmount
 	}, [])
@@ -52,11 +106,24 @@ const Hero = () => {
 	}
 
 	return (
-		<Box className="hero" onWheel={handleScroll} style={{ backgroundImage: `url(${images[currentIndex]})` }}>
+		<Box className="hero" onWheel={handleScroll}>
+			{/* Image Wrapper */}
+			<div className="hero-image-container">
+				{images.map((src, index) => (
+					<img
+						key={index}
+						src={src}
+						alt={`Hero ${index + 1}`}
+						className={`hero-image ${index === currentIndex ? 'active' : ''}`}
+					/>
+				))}
+			</div>
+
+			{/* Overlay & Title */}
 			<div className="hero-overlay"></div>
 			<h2 className="hero-title">Welcome to Resilient Futures Lab</h2>
 
-			{/* Dots Navigation */}
+			{/* Navigation Dots */}
 			<div className="hero-dots">
 				{images.map((_, index) => (
 					<span
