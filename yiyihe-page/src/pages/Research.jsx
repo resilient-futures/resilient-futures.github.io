@@ -83,13 +83,13 @@ import { Typography } from '@mui/material'
 const researchAreas = {
 	climateResilience: {
 		title: 'Climate Resilience',
-		image: '/research/climate.jpg',
+		image: '/research/solar_gallery_image.png',
 		description:
 			'Transportation networks underpin socioeconomic development by enabling the movement of goods and people. However, despite their frequency, little is known about how floods disrupt transportation systems in developing country cities.'
 	},
 	networkScience: {
 		title: 'Network Science',
-		image: '/research/network.png',
+		image: '/research/graph_gallery_image.png',
 		description:
 			'Sea level rise (SLR) and storm surge inundation are major concerns along the coast of the San Francisco Bay, impacting both coastal communities and critical infrastructure networks.'
 	},
