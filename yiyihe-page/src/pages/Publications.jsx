@@ -126,7 +126,6 @@ const Publications = () => {
 			<div className="section-background">
 				<img
 					alt=""
-					// src="/publications/Profile-Pic-Publications.jpg"
 					src="/publications/Profile-Pic-Publications.jpg"
 					className="section-image"
 				/>
