@@ -458,7 +458,8 @@ h2 {
 /* Wrapper & Grid (like Team) */
 .teaching-wrapper {
   width: 62%;
-  max-width: 800px;
+  max-width: 60rem;
+
 }
 
 .teaching-grid {
@@ -572,15 +573,14 @@ h2 {
 
 /* Research Wrapper */
 .research-wrapper {
-  width: 62vw;
+  Width: 62vw;
   /* max-width: 60rem; */
-  /* Prevents it from getting too wide */
-  gap: 2rem;
-  margin-bottom: 2rem;
   padding: 1rem;
   align-items: center;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+
 }
 
 /* Research Buttons (Now Scroll Links) */
@@ -622,7 +622,10 @@ h2 {
   align-items: flex-start;
   padding: 2rem 0;
   gap: 2rem;
-
+  width: 62vw;
+  /* center the section */
+  position: relative;
+  left: 19vw;
 }
 
 /* Research Image */

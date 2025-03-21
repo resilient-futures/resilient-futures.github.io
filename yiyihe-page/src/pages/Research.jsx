@@ -37,7 +37,7 @@ const Research = () => {
 	}
 
 	return (
-		<div className="research-page">
+		<div className="team-members">
 			{/* Profile Picture Section */}
 			<div className="section-background">
 				<img alt="" src="/research/Profile-Pic-Research.jpg" className="section-image" />
@@ -46,47 +46,49 @@ const Research = () => {
 			</div>
 
 
-
-
-
-			{/* Research Buttons for Jumping to Sections */}
-			<div className="research-buttons">
-				<button onClick={() => scrollToSection(climateRef)}>Climate Resilience</button>
-				<button onClick={() => scrollToSection(networkRef)}>Network Science</button>
-				<button onClick={() => scrollToSection(mlRef)}>Machine Learning</button>
-			</div>
-
-			{/* Research Sections */}
 			<div className="research-wrapper">
-				{/* Climate Resilience Section */}
-				<div ref={climateRef} className="research-section">
-					<img src={researchAreas.climateResilience.image} alt="Climate Resilience" className="research-image" />
-					<div className="research-text">
-						<h3>{researchAreas.climateResilience.title}</h3>
-						<p>{researchAreas.climateResilience.description}</p>
-					</div>
 
+
+				{/* Research Buttons for Jumping to Sections */}
+				<div className="research-buttons">
+					<button onClick={() => scrollToSection(climateRef)}>Climate Resilience</button>
+					<button onClick={() => scrollToSection(networkRef)}>Network Science</button>
+					<button onClick={() => scrollToSection(mlRef)}>Machine Learning</button>
 				</div>
 
-				{/* Network Science Section */}
-				<div ref={networkRef} className="research-section">
-					<img src={researchAreas.networkScience.image} alt="Network Science" className="research-image" />
-					<div className="research-text">
+				{/* Research Sections */}
+				<div className="research-wrapper">
+					{/* Climate Resilience Section */}
+					<div ref={climateRef} className="research-section">
+						<img src={researchAreas.climateResilience.image} alt="Climate Resilience" className="research-image" />
+						<div className="research-text">
+							<h3>{researchAreas.climateResilience.title}</h3>
+							<p>{researchAreas.climateResilience.description}</p>
+						</div>
 
-						<h3>{researchAreas.networkScience.title}</h3>
-						<p>{researchAreas.networkScience.description}</p>
 					</div>
 
-				</div>
+					{/* Network Science Section */}
+					<div ref={networkRef} className="research-section">
+						<img src={researchAreas.networkScience.image} alt="Network Science" className="research-image" />
+						<div className="research-text">
 
+							<h3>{researchAreas.networkScience.title}</h3>
+							<p>{researchAreas.networkScience.description}</p>
+						</div>
 
-				{/* Machine Learning Section */}
-				<div ref={mlRef} className="research-section">
-					<img src={researchAreas.machineLearning.image} alt="Machine Learning" className="research-image" />
-					<div className="research-text">
-						<h3>{researchAreas.machineLearning.title}</h3>
-						<p>{researchAreas.machineLearning.description}</p>
 					</div>
+
+
+					{/* Machine Learning Section */}
+					<div ref={mlRef} className="research-section">
+						<img src={researchAreas.machineLearning.image} alt="Machine Learning" className="research-image" />
+						<div className="research-text">
+							<h3>{researchAreas.machineLearning.title}</h3>
+							<p>{researchAreas.machineLearning.description}</p>
+						</div>
+					</div>
+
 				</div>
 			</div>
 		</div>
