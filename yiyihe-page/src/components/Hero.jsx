@@ -9,8 +9,8 @@ const images = [
 	// '/home/image4.jpg',
 	'/home/image5.jpg',
 	'/home/image6.jpg',
-	'/home/image7.jpg',
-	'/home/image8.jpg',
+	'/home/image7.png',
+	'/home/image8.png',
 ]
 
 const Hero = () => {
