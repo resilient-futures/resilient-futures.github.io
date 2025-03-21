@@ -125,24 +125,45 @@ const Publications = () => {
 		<div className="team-members">
 
 
+			{/* 
+
+
+
+		<div className="team-members">
+			<div className="section-background">
+				<img
+					alt=""
+					src="/contact/Profile-Pic-Contact.jpg"
+					className="section-image"
+				/>
+				<div className="section-background-overlay"></div>
+				<Typography variant="h2" className="section-title">
+					Contact
+				</Typography>
+			</div>
+
+
+			<div className='contact-wrapper'>
+*/}
+
 			{/* Reversed Ordered List */}
-			<div
-			>
-				<div className="section-background">
-					<img
-						alt=""
-						src="/publications/Profile-Pic-Publications.jpg"
-						className="section-image"
-					/>
+
+			<div className="section-background">
+				<img
+					alt=""
+					src="/publications/Profile-Pic-Publications.jpg"
+					className="section-image"
+				/>
 
 
-					<div className="section-background-overlay"></div>
-					<Typography variant="h2" className="section-title">
-						Publications
-					</Typography>
-				</div>
+				<div className="section-background-overlay"></div>
 
+				<Typography variant="h2" className="section-title">
+					Publications
+				</Typography>
+			</div>
 
+			<div className='contact-wrapper'>
 				{/* Reversed Ordered List */}
 				<ol className="publications-list" reversed>
 					{publications.map((pub) => (
