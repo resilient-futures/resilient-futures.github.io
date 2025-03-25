@@ -8,17 +8,29 @@
 gh repo clone taraliu23/YiyiHe-Website
 ```
 
-2. Make sure npm is installed by checking `npm -v`. 
+2. Install npm by running in terminal:
+
+```bash
+brew install node
+```
+[Brew Tutorial](https://formulae.brew.sh/formula/node)
+
+3. Make sure npm is installed by checking `npm -v`. 
 
 To get started with  npm, you can refer to [this tutorial](https://www.geeksforgeeks.org/how-to-download-and-install-node-js-and-npm/).
 
 3. Change to the react app directory 
-```
+```bash
 cd yiyihe-page/
 ```
-
-4. Get started!
+4. install packages required in our project
+   
+```bash
+npm install
 ```
+                  
+4. Get started!
+```bash
 npm start
 ```
 
